@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'B612', sans-serif;
+}
+
+
+main{
+  width:100%;
+  height: 720px;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(./image/fundo.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+.descricao{
+  text-align: center;
+  padding-top:45px;
+}
+.descricao p{
+  font-family: 'B612';
+  font-style: normal;
+  font-weight:700;
+  font-size: 20px;
+  line-height: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.descricao h1{
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+  color: #FFFFFF;
+  margin-bottom: 121px;
+}
+
+.img-p img{
+  width: 184px;
+  height: 267px;
+}
+
+.sinopse{
+  width: 100%;
+  display: flex;
+  gap: 70px;
+  padding-left: 220px
+}
+.sinopse-descricao{
+  width: 100%;
+}
+
+.sinopse-descricao p{
+  max-width:100%;
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 400;
+  font-size:1.1rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+
+.flex-span{
+  display: flex;
+  max-width: 100%;
+}
+.flex-span p{
+  margin-left: 14px;
+}
+.flex-span .span{
+  margin-left: 107px;
+  color: #fff;
+}
+
+.flex-span .ano{
+ margin-left: 113px;
+ font-family: 'B612';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 29px;
+ color: #FFFFFF;
+
+}
+
+.mobile{
+  display: none;
+}
+.flex-span-1{
+  max-width: 100%;
+  display: none;
+}
+.flex-span-1 p{
+  margin-left: 14px;
+}
+.flex-span-1 .span{
+  margin-left: 107px;
+  color: #fff;
+}
+
+.flex-span-1 .ano{
+ margin-left: 113px;
+ font-family: 'B612';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 29px;
+ color: #FFFFFF;
+
+}
+
+.azul{
+width: 184px;
+height: 52px;
+left: 487px;
+top: 556px;
+background: #0072D2;
+border-radius: 3px;
+color: #fff;
+border: none;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+color: #fff;
+}
+.preto{
+margin-left: 21px;
+width: 115px;
+height: 52px;
+left: 692px;
+top: 557px;
+background: #131318;
+border: 1px solid #FFFFFF;
+border-radius: 3px;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+color: #fff;
+}
+
+.mobile p{
+  max-width:100%;
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 400;
+  font-size:0.9rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.mobile .btn{
+  text-align: center;
+  padding-top: 40px;
+  border-bottom:1px solid  rgba(196, 196, 196, 0.08);;
+}
+.relogio{
+  display: flex;
+  gap: 8px;
+}
+.btn button{
+  font-size: 12px;
+  width: 150px;
+  height: 35px;
+  margin-bottom: 50px;
+  
+}
+
+@media(max-width:1018px){
+  .flex-span .span{
+    margin-left: 30px;
+    color: #fff;
+  }
+  
+  .flex-span .ano{
+   margin-left: 30px;
+  }
+}
+
+@media(max-width:849px){
+  .flex-span .span{
+    margin-left: 30px;
+    color: #fff;
+  }
+  
+  .flex-span .ano{
+   margin-left: 30px;
+  }
+}
+
+@media(max-width:812px){
+
+  .sinopse-descricao .paragrafo{
+    display: none;
+  }
+
+  .img-p{
+    display:none;
+  }
+
+  .sinopse-descricao .btn{
+    display: none;
+  }
+  .mobile{
+    position: absolute;
+    width:100%;
+    height: 250px;
+    left:0px;
+    top:650px;
+    background: #19191F;
+    border-radius: 20px 20px 0px 0px;
+    display: block;
+  }
+
+  .sinopse{
+    position: relative;
+  }
+
+  .sinopse-descricao{
+    position: absolute;
+  }
+
+  .flex-span{
+    display: none;
+  }
+  .flex-span-1{
+    display: flex;
+    justify-content: center;
+    padding-top: 230px;
+    
+  }
+  .flex-span-1 p{
+    color: #fff;
+    margin-top: 5px;
+  }
+}
+
+
+@media(max-width:530px){
+
+  .sinopse-descricao .paragrafo{
+    display: none;
+  }
+
+  .img-p{
+    display:none;
+  }
+
+  .sinopse-descricao .btn{
+    display: none;
+  }
+  .mobile{
+    position: absolute;
+    width:100%;
+    height: 250px;
+    left:0px;
+    top:650px;
+    background: #19191F;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .sinopse{
+    position: relative;
+  }
+
+  .sinopse-descricao{
+    position: absolute;
+  }
+
+  .flex-span{
+    display: none;
+  }
+  .flex-span-1{
+    display: flex;
+    padding-top: 230px;
+    width: 100%;
+  }
+  .flex-span-1 .relogio{
+    margin-left:7px;
+  }
+  .flex-span-1 .span img{
+    width:18px;
+  }
+
+  .flex-span-1 .span{
+    margin-left:40px;
+  }
+  .flex-span-1 p{
+    color: #fff;
+    margin-top: 5px;
+  }
+
+  .span .ano{
+    margin-left: 40px;
+    font-size: 1rem;
+  }
+}
+@media(max-width:414px){
+  .mobile{
+    height:400px ;
+  }
+  .flex-span-1 .relogio img{
+    width: 20px;
+    margin-top: 3px;
+  }
+
+   .relogio p{
+   margin-left: 1px;
+   font-size: 13px;
+  }
+
+  .flex-span-1 .span img{
+    width:16px;
+  }
+
+  .flex-span-1 .span{
+    margin-left:20px;
+  }
+  .flex-span-1 p{
+    color: #fff;
+    margin-top: 5px;
+  }
+
+  .span .ano {
+    margin-left: 12px;
+    font-size: .9rem;
+  }
+
+  .mobile button{
+     width: 100px;
+     font-size: .5rem;
+  }
+  .mobile{
+    height: 310px;
+  }
+  .mobile p{
+    padding: 8px;
+    font-size: 1rem;
+    max-width: 450px;
+  }
+}
+
+@media(max-width:350px){
+
+  .flex-span-1 .relogio img{
+    width: 20px;
+    margin-top: 3px;
+  }
+
+   .relogio p{
+   margin-left: 1px;
+   font-size: 13px;
+  }
+
+  .flex-span-1 .span img{
+    width:16px;
+  }
+
+  .flex-span-1 .span{
+    margin-left:20px;
+  }
+  .flex-span-1 p{
+    color: #fff;
+    margin-top: 5px;
+  }
+
+  .span .ano {
+    margin-left: 12px;
+    font-size: .9rem;
+  }
+
+  .mobile button{
+     width: 100px;
+     font-size: .5rem;
+  }
+  .mobile{
+    height: 310px;
+  }
+  .mobile p{
+    padding: 8px;
+    font-size: 1rem;
+    max-width: 450px;
+  }
+}
+
+@media(max-width:280px){
+
+  .flex-span-1 .relogio img{
+    width: 20px;
+    margin-top: 3px;
+  }
+
+   .relogio p{
+   margin-left: 1px;
+   font-size: 13px;
+  }
+
+  .flex-span-1 .span img{
+    width:16px;
+  }
+
+  .flex-span-1 .span{
+    margin-left:20px;
+  }
+  .flex-span-1 p{
+    color: #fff;
+    margin-top: 5px;
+  }
+
+  .span .ano {
+    margin-left: 12px;
+    font-size: .9rem;
+  }
+
+  .mobile button{
+     width: 100px;
+     font-size: .5rem;
+  }
+  .mobile{
+    height: 415px;
+  }
+  .mobile p{
+    padding: 8px;
+    font-size: 1rem;
+    max-width: 450px;
+  }
+}
+
+
